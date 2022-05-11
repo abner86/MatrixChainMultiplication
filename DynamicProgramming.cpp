@@ -14,7 +14,7 @@ void OptimalParentheses(const vector<vector<int>>& S, int i, int j) {
 	}
 }
 
-void matrixChainMultiplication(const vector<int>& dims)
+void MatrixChainMultiplication(const vector<int>& dims)
 {
 	int n = dims.size();
 
@@ -89,12 +89,12 @@ void matrixChainMultiplication(const vector<int>& dims)
 	OptimalParentheses(S, 0, n - 2);
 	cout << endl;
 
-	std::cout << "Cost " << Opt[1][n - 1] << "\t";
+	std::cout << "Cost: " << Opt[1][n - 1] << "\t";
 	cout << endl;
 }
 
 int main()
 {
 	vector<int> matrix = { 3, 7, 4, 20, 5 };
-	matrixChainMultiplication(matrix);
+	MatrixChainMultiplication(matrix);
 }
